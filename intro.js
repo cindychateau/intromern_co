@@ -166,3 +166,14 @@ if(i == j) {
 }
 
 console.log( i == j ? "i es igual a j" : i < j ? "i es menor a j" : "j es menor a i" );
+
+var lista_alumnos = [
+    {nombre: "Elena", apellido: "De Troya", id: 123, cursos: ["Fundamentos de la Web", "Python"]},
+    {nombre: "Juana", apellido: "De Arco", id: 234, cursos: ["Fundamentos de la Web", "Python", "MERN"]},
+    {nombre: "Pedro", apellido: "Páramo", id: 345, cursos: ["Fundamentos de la Web", "Python", "MERN", "Java"]}
+]
+
+
+var [,,{cursos: [,,cursoMern]}] = lista_alumnos;
+
+console.log(cursoMern);
